@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Paw Spa Chat</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<div class="container">
+
+    <div class="header">
+        🐾 Paw Spa & Nest AI Assistant
+    </div>
+
+    <div id="messages"></div>
+    <div class="quick-actions">
+    <button onclick="quickMessage('I want to book grooming for my dog.')">
+        🐶 Grooming
+    </button>
+
+    <button onclick="quickMessage('Tell me about pet boarding.')">
+        🏠 Boarding
+    </button>
+
+    <button onclick="quickMessage('What are your grooming prices?')">
+        💰 Prices
+    </button>
+
+    <button onclick="quickMessage('Where is Paw Spa & Nest located?')">
+        📍 Location
+    </button>
+
+    <button onclick="quickMessage('How can I contact Paw Spa & Nest?')">
+        📞 Contact
+    </button>
+</div>
+
+<h3>📅 Book an Appointment</h3>
+
+<div class="booking-form">
+
+    <input id="name" type="text" placeholder="Owner Name">
+
+    <input id="phone" type="text" placeholder="Phone Number">
+
+    <input id="pet_name" type="text" placeholder="Pet Name">
+
+    <input id="pet_type" type="text" placeholder="Dog / Cat">
+
+    <input id="breed" type="text" placeholder="Breed">
+
+    <input id="service" type="text" placeholder="Service">
+
+    <input id="date" type="date">
+
+    <input id="time" type="time">
+
+    <button onclick="bookAppointment()">Book Appointment</button>
+
+    <button onclick="sendWhatsApp()">
+    💬 Book via WhatsApp
+</button>
+
+</div>
+
+    <div class="chat-input">
+
+    <input
+        id="message"
+        type="text"
+        placeholder="Type or speak your message..."
+    />
+
+    <button onclick="startListening()">🎤</button>
+
+    <button onclick="sendMessage()">Send</button>
+
+</div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

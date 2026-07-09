@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Paw Spa AI Widget</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- Floating Chat Button -->
+<button id="chatButton" class="chat-button" onclick="toggleChat()">
+    💬
+</button>
+
+<!-- Chat Window -->
+<div id="chatWindow" class="chat-window">
+
+    <div class="chat-header">
+        🐾 Paw Spa & Nest AI
+        <button onclick="toggleChat()">✖</button>
+    </div>
+
+    <div id="messages"></div>
+
+    <div class="chat-input">
+
+        <input
+            id="message"
+            type="text"
+            placeholder="Ask anything..."
+        >
+
+        <button onclick="startListening()">🎤</button>
+
+        <button onclick="sendMessage()">Send</button>
+
+    </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
