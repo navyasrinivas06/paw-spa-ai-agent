@@ -2,7 +2,7 @@ async function loadBookings() {
 
     try {
 
-        const response = await fetch("http://127.0.0.1:8000/bookings");
+        const response = await fetch("https://paw-spa-ai-agent.onrender.com/bookings");
 
         const bookings = await response.json();
 
@@ -53,7 +53,7 @@ async function deleteBooking(id) {
     try {
 
         const response = await fetch(
-            `http://127.0.0.1:8000/book/${id}`,
+            `https://paw-spa-ai-agent.onrender.com/book/${id}`,
             {
                 method: "DELETE"
             }

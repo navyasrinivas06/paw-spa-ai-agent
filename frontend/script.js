@@ -51,7 +51,7 @@ async function sendMessage() {
 
     try {
 
-        const response = await fetch("http://127.0.0.1:8000/chat", {
+        const response = await fetch("https://paw-spa-ai-agent.onrender.com/chat", {
 
             method: "POST",
 
@@ -127,7 +127,7 @@ async function bookAppointment() {
 
     try {
 
-        const response = await fetch("http://127.0.0.1:8000/book", {
+        const response = await fetch("https://paw-spa-ai-agent.onrender.com/book", {
 
             method: "POST",
 

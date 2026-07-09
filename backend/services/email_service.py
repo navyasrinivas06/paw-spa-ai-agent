@@ -9,9 +9,9 @@ EMAIL = os.getenv("EMAIL")
 PASSWORD = os.getenv("EMAIL_PASSWORD")
 
 
-def send_booking_email(to_email, booking):
+def send_booking_email(*args, **kwargs):
 
-    subject = "Paw Spa & Nest - Booking Confirmation"
+    print("Email sending skipped.")
 
     body = f"""
 Hello,
